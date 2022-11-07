@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+    --main-color: #c0392b;
+    --body-bg: #181616;
+    --box-bg: #221f1f;
+    --text-color: #ffffff;
+    --nav-height: 60px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#container {
+    /* border: 1px solid red; */
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    background: #121FCF;
+    background: radial-gradient(circle farthest-corner at center center, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input {
+    width: 250px;
+    margin-top: 2%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: rgba(19, 19, 19, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-weight: 500;
+    padding: 8px 10px;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.signupBtn {
+    padding: 7px 84px;
+}
+
+.loginBtn {
+    padding: 7px 94px;
+}
+
+button {
+    border: 1px solid gray;
+    margin: 20px 0;
+    border-radius: 50px;
+    outline: none;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+#register-form {
+    /* border: 1px solid green; */
+    display: block;
+    text-align: center;
+}
+
+#login-form {
+    /* border: 1px solid blue; */
+    display: block;
+    text-align: center;
+    padding: 90px 0px;
+}
+
+
+/*************** NAVBAR ***************/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+}
+
+.logo {
+    width: 7%;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/fc793d5a/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./video.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.2/css/boxicons.min.css" integrity="sha512-AGmpdsTqvAh2GvTWzVhhJ9VqQb1eAXwOM7uiWtv0DzcnGaGWy98K51z2cK5OG3gp4NB1HbMaD7p0MeO9kE7E3w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="playVideo()">
+
+    <!---------- NAVBAR  ---------->
+
+    <nav class="navbar">
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img class="logo" src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="youtube-logo">
+        <div class="search-box">
+            <input type="text" placeholder="Search" id="query" class="search-bar">
+            <button onclick="searchVideos()" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <i class='bx bxs-microphone'></i>
+        </div>
+        <div class="user-options">
+            <a href="#">
+                <i class='bx bx-upload'></i>
+            </a>
+            <a href="#">
+                <i class='bx bx-bell'></i>
+            </a>
+            <a href="./login.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="video_details">
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/r8syMXS2CPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        <div id="recommendation">
+
+        </div>
+    </div>
+</body>
+<script src="./video.js"></script>
+<script>
+    document.querySelector(".logo").addEventListener("click", function() {
+        document.location.href = "index.html"
+    });
+</script>
+
+</html>

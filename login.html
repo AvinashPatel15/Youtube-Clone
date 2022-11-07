@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Login & SignUp</title>
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/fc793d5a/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <!---------- NAVBAR  ---------->
+
+    <nav class="navbar">
+        <img class="logo" src="https://www.freeiconspng.com/thumbs/youtube-logo-png/youtube-logo-png-transparent-image-5.png" alt="youtube-logo">
+    </nav>
+    <div id="container">
+        <div id="register-form">
+            <h3>SignUp</h3>
+            <form action="">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <input type="text" id="username" placeholder="Username">
+                <input type="number" id="mobile" placeholder="Number">
+                <input type="text" id="description" placeholder="Discription">
+            </form>
+            <button onclick="Register()" class="signupBtn">SIGN UP</button>
+        </div>
+        <div id="login-form">
+            <h3>Login</h3>
+            <form>
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+            </form>
+            <button onclick="Login()" class="loginBtn">LOGIN</button>
+        </div>
+    </div>
+</body>
+<script src="./login.js"></script>
+
+<!--1. Where we need to send the data? (Masai Server) -->
+<!--2.   -->
+<script>
+    document.querySelector(".logo").addEventListener("click", function() {
+        document.location.href = "index.html"
+    });
+</script>
+
+</html>
